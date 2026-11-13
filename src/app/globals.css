@@ -182,7 +182,13 @@ button, a { -webkit-tap-highlight-color: transparent; }
   stroke-width: 1;
 }
 
-.hero-visual-circuit circle { fill: #2ec2a2; stroke: none; }
+.hero-visual-circuit circle {
+  fill: #2ec2a2;
+  stroke: none;
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: hero-visual-indicator-pulse 3s ease-in-out infinite;
+}
 
 .hero-visual-topline,
 .hero-visual-baseline {
@@ -230,11 +236,33 @@ button, a { -webkit-tap-highlight-color: transparent; }
   border: 1px dashed rgb(46 194 162 / 27%);
   border-radius: 50%;
   content: "";
+  animation: hero-visual-inner-orbit 22s linear infinite;
+  will-change: transform;
 }
 
-.hero-visual-orbit::after { inset: -0.8rem; border-style: solid; border-color: rgb(229 231 235 / 8%); }
+.hero-visual-orbit::after {
+  inset: -0.8rem;
+  border-style: solid;
+  border-color: rgb(229 231 235 / 8%);
+  animation-name: hero-visual-outer-orbit;
+}
 .hero-visual-orbit-inner { position: absolute; inset: 1.35rem; border: 1px solid rgb(46 194 162 / 13%); border-radius: 50%; }
 .hero-visual-logo { position: relative; width: 68%; height: auto; object-fit: contain; }
+
+@keyframes hero-visual-outer-orbit {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes hero-visual-inner-orbit {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(-360deg); }
+}
+
+@keyframes hero-visual-indicator-pulse {
+  0%, 100% { opacity: 0.7; transform: scale(0.9); }
+  50% { opacity: 1; transform: scale(1.15); }
+}
 
 .hero-visual-readout {
   position: absolute;
@@ -352,5 +380,11 @@ button, a { -webkit-tap-highlight-color: transparent; }
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
+  }
+
+  .hero-visual-orbit::before,
+  .hero-visual-orbit::after,
+  .hero-visual-circuit circle {
+    animation: none;
   }
 }
