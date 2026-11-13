@@ -1,8 +1,10 @@
 node_modules/
 .next/
 .cloudflare/
+.vinext/
 .env
 .env.*
 !.env.example
 dist/
 .vercel/
+*.tsbuildinfo
