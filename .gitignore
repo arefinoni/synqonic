@@ -1,0 +1,8 @@
+node_modules/
+.next/
+.cloudflare/
+.env
+.env.*
+!.env.example
+dist/
+.vercel/
