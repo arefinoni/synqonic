@@ -5,7 +5,7 @@ export default defineConfig({
   worker: defineWorker({
     name: "synqonic",
     entrypoint: "vinext/server/fetch-handler",
-    compatibilityDate: "2026-11-13",
+    compatibilityDate: "2026-11-10",
     compatibilityFlags: ["global_fetch_strictly_public"],
     observability: {
       enabled: true,
@@ -19,7 +19,7 @@ export default defineConfig({
       ASSETS: bindings.assets(),
       IMAGES: bindings.images(),
       WORKER_SELF_REFERENCE: bindings.worker({
-        worker: "synqonic",
+        worker: "synqonic-production",
       }),
     },
   }),
