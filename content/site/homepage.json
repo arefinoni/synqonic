@@ -1,5 +1,5 @@
 {
-  "heroTitle": "Question the system.",
+  "heroTitle": "Question the Test.",
   "heroSubtitle": "Break assumptions.",
   "intro": "Cybersecurity education, research, media, and community.",
   "academyCtaLabel": "Explore the Academy",
@@ -7,6 +7,5 @@
   "resourcesCtaLabel": "Browse resources",
   "resourcesCtaHref": "/resources",
   "communityCtaLabel": "About the community",
-  "communityCtaHref": "/community",
-  "heroImage": ""
+  "communityCtaHref": "/community"
 }
