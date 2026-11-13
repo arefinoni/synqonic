@@ -1,11 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
+import { ScrambleText } from "@/components/ui/scramble-text";
 
 type BrandLockupProps = {
   className?: string;
+  scramble?: boolean;
 };
 
-export function BrandLockup({ className = "" }: BrandLockupProps) {
+export function BrandLockup({ className = "", scramble = false }: BrandLockupProps) {
   return (
     <Link
       href="/"
@@ -20,7 +22,7 @@ export function BrandLockup({ className = "" }: BrandLockupProps) {
         sizes="48px"
         className="size-12 object-contain"
       />
-      <span>SYNQONIC</span>
+      {scramble ? <ScrambleText text="SYNQONIC" trigger="appear-and-hover" /> : <span>SYNQONIC</span>}
     </Link>
   );
 }

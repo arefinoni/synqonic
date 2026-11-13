@@ -29,7 +29,6 @@ export default async function MediaPage() {
           description="The latest SYNQONIC videos and field notes, plus the official channels where new work appears."
           headingId="media-title"
         />
-
         <div className="mt-12 sm:mt-16">
           <h2 className="text-technical-label mb-5 text-subtle">Latest videos</h2>
           {videos.items.length ? (
@@ -47,7 +46,7 @@ export default async function MediaPage() {
             <div className="article-list">
               {articles.items.map((article) => (
                 <article key={article.url} className="article-row">
-                  {article.image ? <MediumArticleImage src={article.image} /> : <div className="article-image article-image-placeholder" aria-hidden="true"><span>Synqonic · Field notes</span></div>}
+                  {article.image ? <MediumArticleImage src={article.image} /> : null}
                   <div className="article-row-copy">
                     <h3 className="text-base font-medium"><a href={article.url} target="_blank" rel="noopener noreferrer" className="transition-colors hover:text-accent">{article.title}<span aria-hidden="true"> ↗</span><span className="sr-only"> (opens in a new tab)</span></a></h3>
                     <p>{article.description}</p>

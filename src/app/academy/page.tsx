@@ -56,7 +56,6 @@ export default function AcademyPage() {
           description="A clear starting point for curious learners. Choose a path, build context through reliable references, and practice only where you have permission."
           headingId="academy-title"
         />
-
         <div className="mt-12 grid gap-4 sm:mt-16 sm:grid-cols-2">
           {learningPaths.map((path, index) => (
             <ContentCard key={path.title} className="flex h-full flex-col">

@@ -146,6 +146,12 @@ button, a { -webkit-tap-highlight-color: transparent; }
   text-wrap: balance;
 }
 
+.button-glow {
+  box-shadow: 0 0 0 1px rgb(234 88 12 / 8%), 0 0 18px rgb(234 88 12 / 10%);
+  transition: color 160ms ease, background-color 160ms ease, border-color 160ms ease, box-shadow 160ms ease;
+}
+.button-glow:hover { box-shadow: 0 0 0 1px rgb(234 88 12 / 12%), 0 0 24px rgb(234 88 12 / 15%); }
+
 .hero-cta-row {
   display: flex;
   flex-wrap: wrap;

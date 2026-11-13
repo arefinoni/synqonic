@@ -1,5 +1,6 @@
 import { CommunityCta } from "@/components/layout/community-cta";
 import { ContentCard } from "@/components/ui/content-card";
+import { Button } from "@/components/ui/button";
 import { ResponsiveContainer } from "@/components/ui/responsive-container";
 import { SectionHeading } from "@/components/ui/section-heading";
 import { getLatestArticles, getLatestVideos } from "@/lib/content-feeds";
@@ -86,7 +87,9 @@ export async function HomepageSections() {
               </ContentCard>
             ))}
           </div>
-          <a className="section-text-link" href="/academy">Explore the Academy <span aria-hidden="true">→</span></a>
+          <div className="mt-7 flex justify-center">
+            <Button href="/academy" variant="secondary">Explore the Academy <span aria-hidden="true">→</span></Button>
+          </div>
         </ResponsiveContainer>
       </section>
 
@@ -102,7 +105,9 @@ export async function HomepageSections() {
               </ContentCard>
             ))}
           </div>
-          <a className="section-text-link" href="/resources">Browse resources <span aria-hidden="true">→</span></a>
+          <div className="mt-7 flex justify-center">
+            <Button href="/resources" variant="secondary">Browse resources <span aria-hidden="true">→</span></Button>
+          </div>
         </ResponsiveContainer>
       </section>
 
@@ -111,7 +116,9 @@ export async function HomepageSections() {
           <ContentCard className="community-card">
             <div>
               <SectionHeading headingId="community-heading" eyebrow="Community" title="Learn better, together." description="Meet people who share your curiosity, exchange ideas, and keep responsible security research moving forward." level={2} />
-              <a className="section-text-link" href="/community">About the community <span aria-hidden="true">→</span></a>
+              <div className="mt-7 flex justify-start">
+                <Button href="/community" variant="secondary">About the community <span aria-hidden="true">→</span></Button>
+              </div>
             </div>
             <div className="community-action">
               <p>Join the conversation</p>

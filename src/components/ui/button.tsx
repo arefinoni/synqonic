@@ -19,7 +19,7 @@ const variants = {
 
 export function Button(props: ButtonProps) {
   const { href, variant = "primary", className = "", children, ...attributes } = props;
-  const classes = `inline-flex min-h-11 items-center justify-center rounded-md border px-5 py-2.5 text-sm font-semibold transition-colors ${variants[variant]} ${className}`;
+  const classes = `inline-flex min-h-11 items-center justify-center rounded-md border px-5 py-2.5 text-sm font-semibold transition-colors button-glow ${variants[variant]} ${className}`;
 
   if (typeof href === "string") {
     return <Link className={classes} href={href} {...(attributes as Omit<AnchorHTMLAttributes<HTMLAnchorElement>, "href">)}>{children}</Link>;

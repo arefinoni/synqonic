@@ -1,5 +1,5 @@
-import { CommunityCta } from "@/components/layout/community-cta";
 import { ContentCard } from "@/components/ui/content-card";
+import { CommunityCta } from "@/components/layout/community-cta";
 import { ResponsiveContainer } from "@/components/ui/responsive-container";
 import { SectionHeading } from "@/components/ui/section-heading";
 import type { Metadata } from "next";

@@ -2,8 +2,8 @@ import { Button } from "@/components/ui/button";
 import { ResponsiveContainer } from "@/components/ui/responsive-container";
 import { SocialLinks } from "@/components/ui/social-links";
 import { HeroTechnicalVisual } from "@/components/sections/hero-technical-visual";
-import { homepagePrimarySocialLinks } from "@/config/social";
 import { HomepageSections } from "@/components/sections/homepage-sections";
+import { homepagePrimarySocialLinks } from "@/config/social";
 
 export default function HomePage() {
   return (
