@@ -1,0 +1,31 @@
+{
+  "title": "Build your security skills.",
+  "description": "A clear starting point for curious learners.",
+  "learningPaths": [
+    {
+      "title": "Security foundations",
+      "level": "Start here",
+      "description": "Build a working vocabulary for confidentiality, integrity, availability, threat modeling, and risk.",
+      "topics": "Security principles, Threat modeling, Risk and controls"
+    },
+    {
+      "title": "Web application security",
+      "level": "Build practical context",
+      "description": "Study how web applications fail and how developers and testers can reduce those risks responsibly.",
+      "topics": "HTTP and browsers, OWASP Top 10, Secure design"
+    },
+    {
+      "title": "Systems and networks",
+      "level": "Develop core skills",
+      "description": "Understand the operating systems, networks, and protocols that security work depends on.",
+      "topics": "Linux basics, Networking, Identity and access"
+    },
+    {
+      "title": "Security research practice",
+      "level": "Apply careful methods",
+      "description": "Learn a repeatable approach to scoped testing, evidence, documentation, and responsible disclosure.",
+      "topics": "Reconnaissance, Evidence and notes, Disclosure"
+    }
+  ],
+  "featuredImage": ""
+}

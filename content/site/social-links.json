@@ -1,0 +1,16 @@
+{
+  "links": [
+    { "label": "YouTube", "platform": "youtube", "href": "https://youtube.com/@synqonic?sub_confirmation=1", "category": "Video" },
+    { "label": "X", "platform": "x", "href": "https://x.com/synqonic", "category": "Social" },
+    { "label": "Medium", "platform": "medium", "href": "https://medium.com/@synqonic", "category": "Publishing" },
+    { "label": "Facebook", "platform": "facebook", "href": "https://facebook.com/synqonic" },
+    { "label": "Instagram", "platform": "instagram", "href": "https://www.instagram.com/synqonic" },
+    { "label": "Threads", "platform": "threads", "href": "https://www.threads.com/@synqonic" },
+    { "label": "YouTube Live", "platform": "youtube", "href": "https://youtube.com/@synqoniclive?sub_confirmation=1", "category": "Video & streaming" },
+    { "label": "TikTok", "platform": "tiktok", "href": "https://www.tiktok.com/@synqonic", "category": "Video & streaming" },
+    { "label": "Twitch", "platform": "twitch", "href": "https://www.twitch.tv/synqonic", "category": "Video & streaming" },
+    { "label": "Kick", "platform": "kick", "href": "https://kick.com/synqonic", "category": "Video & streaming" },
+    { "label": "Bluesky", "platform": "bluesky", "href": "https://bsky.app/profile/synqonic.bsky.social", "category": "Other networks" },
+    { "label": "Mastodon", "platform": "mastodon", "href": "https://mastodon.social/@synqonic", "category": "Other networks" }
+  ]
+}
