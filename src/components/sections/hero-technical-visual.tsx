@@ -18,6 +18,8 @@ export function HeroTechnicalVisual() {
       </div>
 
       <div className="hero-visual-orbit">
+        <span className="hero-visual-orbit-outer" aria-hidden="true" />
+        <span className="hero-visual-orbit-dashed" aria-hidden="true" />
         <span className="hero-visual-orbit-inner" />
         <Image
           src="/brand/synqonic-logo.png"

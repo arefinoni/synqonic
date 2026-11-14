@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { ResponsiveContainer } from "@/components/ui/responsive-container";
 import { SocialLinks } from "@/components/ui/social-links";
 import { HeroTechnicalVisual } from "@/components/sections/hero-technical-visual";
+import { HeroDigitalField } from "@/components/sections/hero-digital-field";
 import { HomepageSections } from "@/components/sections/homepage-sections";
 import { homepagePrimarySocialLinks } from "@/config/social";
 
@@ -10,6 +11,7 @@ export default function HomePage() {
     <>
       <section className="home-hero" aria-labelledby="home-title">
         <div className="home-hero-atmosphere" aria-hidden="true">
+          <HeroDigitalField />
           <svg className="home-hero-circuits" viewBox="0 0 1600 800" preserveAspectRatio="none" fill="none">
             <g>
               <path d="M0 135h132l48 48h235l42-42h278l48 48h234l42-42h541" />
