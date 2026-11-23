@@ -5,20 +5,21 @@ import { SocialPlatformIcon } from "@/components/ui/social-platform-icon";
 type SocialLinksProps = {
   links: SocialLink[];
   variant?: "featured" | "outlined" | "compact";
+  ariaLabel?: string;
 };
 
-export function SocialLinks({ links, variant = "compact" }: SocialLinksProps) {
+export function SocialLinks({ links, variant = "compact", ariaLabel }: SocialLinksProps) {
   const featured = variant === "featured";
   const outlined = variant === "outlined";
 
   return (
     <ul
       className={featured
-        ? "grid grid-cols-1 gap-3 sm:grid-cols-3"
+        ? "grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3"
         : outlined
           ? "flex flex-wrap gap-2"
           : "flex flex-wrap gap-x-4 gap-y-1"}
-      aria-label={featured || outlined ? "Primary platforms" : undefined}
+      aria-label={ariaLabel ?? (featured || outlined ? "Primary platforms" : undefined)}
     >
       {links.map(({ platform, label, href, category }) => (
         <li key={`${platform}-${label}`}>

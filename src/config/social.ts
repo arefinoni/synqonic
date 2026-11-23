@@ -39,25 +39,25 @@ export const secondarySocialGroups: SocialGroup[] = [
   {
     label: "Meta",
     links: [
-      { platform: "facebook", label: "Facebook", href: "https://facebook.com/synqonic" },
-      { platform: "instagram", label: "Instagram", href: "https://www.instagram.com/synqonic" },
-      { platform: "threads", label: "Threads", href: "https://www.threads.com/@synqonic" },
+      { platform: "facebook", label: "Facebook", href: "https://facebook.com/synqonic", category: "Social" },
+      { platform: "instagram", label: "Instagram", href: "https://www.instagram.com/synqonic", category: "Social" },
+      { platform: "threads", label: "Threads", href: "https://www.threads.com/@synqonic", category: "Social" },
     ],
   },
   {
     label: "Video & streaming",
     links: [
-      { platform: "youtube", label: "YouTube Live", href: "https://youtube.com/@synqoniclive?sub_confirmation=1" },
-      { platform: "tiktok", label: "TikTok", href: "https://www.tiktok.com/@synqonic" },
-      { platform: "twitch", label: "Twitch", href: "https://www.twitch.tv/synqonic" },
-      { platform: "kick", label: "Kick", href: "https://kick.com/synqonic" },
+      { platform: "youtube", label: "YouTube Live", href: "https://youtube.com/@synqoniclive?sub_confirmation=1", category: "Streaming" },
+      { platform: "tiktok", label: "TikTok", href: "https://www.tiktok.com/@synqonic", category: "Video" },
+      { platform: "twitch", label: "Twitch", href: "https://www.twitch.tv/synqonic", category: "Streaming" },
+      { platform: "kick", label: "Kick", href: "https://kick.com/synqonic", category: "Streaming" },
     ],
   },
   {
     label: "Other networks",
     links: [
-      { platform: "bluesky", label: "Bluesky", href: "https://bsky.app/profile/synqonic.bsky.social" },
-      { platform: "mastodon", label: "Mastodon", href: "https://mastodon.social/@synqonic" },
+      { platform: "bluesky", label: "Bluesky", href: "https://bsky.app/profile/synqonic.bsky.social", category: "Social" },
+      { platform: "mastodon", label: "Mastodon", href: "https://mastodon.social/@synqonic", category: "Social" },
     ],
   },
 ];
