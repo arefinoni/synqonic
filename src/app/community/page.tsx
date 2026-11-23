@@ -26,13 +26,13 @@ export default function CommunityPage() {
           headingId="community-title"
         />
 
-        <ContentCard className="mt-12 flex flex-col gap-5 sm:mt-16 sm:flex-row sm:items-center sm:justify-between">
+        <ContentCard className="mt-12 flex flex-col gap-6 sm:mt-16 sm:flex-row sm:items-center sm:justify-between">
           <div>
             <p className="text-technical-label text-accent">Discord</p>
             <h2 className="mt-4 text-2xl font-medium">Join the conversation.</h2>
             <p className="mt-2 max-w-2xl text-sm leading-7 text-muted">Meet people who share your curiosity, exchange ideas, and keep responsible security research moving forward.</p>
           </div>
-          <CommunityCta />
+          <CommunityCta size="large" />
         </ContentCard>
 
         <div className="mt-4">

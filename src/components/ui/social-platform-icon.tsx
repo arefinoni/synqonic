@@ -6,9 +6,10 @@ type SocialPlatformIconProps = {
 };
 
 export function SocialPlatformIcon({ platform, className = "" }: SocialPlatformIconProps) {
+  const hasCustomSize = /\bsize-\d+\b/.test(className);
   const common = {
     "aria-hidden": true as const,
-    className: `size-5 shrink-0 ${className}`,
+    className: `${hasCustomSize ? "" : "size-5 "}shrink-0 ${className}`.trim(),
     fill: "none",
     viewBox: "0 0 24 24",
     xmlns: "http://www.w3.org/2000/svg",
